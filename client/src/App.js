@@ -16,23 +16,23 @@ const client = new ApolloClient({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <NavBar/>
-    <ApolloProvider client={client}>
-      <Router>
-        <Grid container spacing={2}>
-          <Routes>
-            <Route 
-              path="/" 
-              element={<Home />}
-            />
-            <Route 
-              path="*"
-              element={<NotFound />}
-            />
-          </Routes>
-        </Grid>
-      </Router>
-    </ApolloProvider>
+      <NavBar />
+      <ApolloProvider client={client}>
+        <Router>
+          <Grid >
+            <Routes>
+              <Route
+                path="/"
+                element={<Home />}
+              />
+              <Route
+                path="*"
+                element={<NotFound />}
+              />
+            </Routes>
+          </Grid>
+        </Router>
+      </ApolloProvider>
     </ThemeProvider>
   );
 }

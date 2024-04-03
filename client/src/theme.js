@@ -23,12 +23,11 @@ const theme = createTheme({
     },
   },
   typography: {
-    htmlFontSize: '14px',
     fontFamily: 'Open Sans',
-    subtitle1: {
-      fontFamily: 'Lato',
+    h1: {
+      fontSize: "72px",
     },
-    subtitle2: {
+    subtitle1: {
       fontFamily: 'Lato',
     },
     caption: {

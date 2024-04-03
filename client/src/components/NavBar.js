@@ -38,6 +38,5 @@ const NavBar = () => {
 export default NavBar;
 
 const StyledAppBar = styled(AppBar)`
-  margin-bottom: 100px;
   background-color: #c90159;
 `;
