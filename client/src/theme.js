@@ -27,6 +27,24 @@ const theme = createTheme({
     h1: {
       fontSize: "72px",
     },
+    h2: {
+      fontSize: "64px",
+    },
+    h3: {
+      fontSize: "56px",
+    },
+    h4: {
+      fontSize: "48px",
+    },
+    h5: {
+      fontSize: "40px",
+    },
+    h6: {
+      fontSize: "32px",
+    },
+    body: {
+      fontSize: "14px"
+    },
     subtitle1: {
       fontFamily: 'Lato',
     },

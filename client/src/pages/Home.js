@@ -1,32 +1,22 @@
 import React from "react";
-import { Container, Typography } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
-import Banner from "../assets/images/banner.jpg"
-import styled from 'styled-components'
+import HomeBanner from "../components/HomeBanner";
+import SimpleCard from "../components/SimpleCard";
+import PageLayout from "../layouts/PageLayout";
+import { Button } from "@mui/material";
 
 const Home = () => {
-  const theme = useTheme();
   return (
-    <Container maxWidth={'100%'} sx={{ padding: '0 !important' }}>
-      <StyledText color={theme.palette.primary.contrastText} variant="h1"> Welcome to Pageantree! </StyledText>
-      <StyledBanner src={Banner} alt="Miss El Salvador crowning" />
-    </Container>
+    <>
+      <PageLayout>
+        <HomeBanner />
+        <SimpleCard bodyContent={"this is body content"} headerRight={"icon || tooltip || nothing"} />
+        <SimpleCard bodyContent={"this is body content"} headerText={"true story you heard here first"} footerCenter={"center"} footerRight={"right"} width="600px" />
+        <SimpleCard bodyContent={"this is body content"} />
+        <SimpleCard bodyContent={"this has way more body content than the other AND it has a footer. If you don't believe me, go ahead and take a look!"} footerCenter={"center"} footerLeft={"left"} footerRight={<Button>right</Button>} />
+      </PageLayout>
+    </>
+
   );
 };
 
 export default Home;
-
-const StyledBanner = styled.img`
-width: 100vw;
-height: 750px;
-opacity: 0.8;
-object-fit: cover;
-object-position: 0 0;
-`
-
-const StyledText = styled(Typography)`
-position: absolute;
-margin-top: 85px;
-z-index:10000;
-margin-left: 100px;
-`

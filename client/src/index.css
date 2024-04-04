@@ -19,6 +19,7 @@ html {
  */
 body {
   margin: 0;
+  background-color: "#fff4fb";
 }
 
 /**
@@ -351,6 +352,7 @@ END NORMALIZE CSS
 html,
 body {
   min-height: 100%;
+  background-color: #fff4fb;
 }
 
 body {
