@@ -38,7 +38,7 @@ const SimpleCard = ({
         <StyledCard raised sx={{ height: { height }, width: { width }, backgroundColor: "chartreuse" }}>
             {checkHeader(headerText, headerRight) &&
                 < StyledHeader >
-                    <Typography variant='body'>{headerText}</Typography>
+                    <Typography variant='h6'>{headerText}</Typography>
                     {headerRight &&
                         <span>{headerRight}</span>
                     }
