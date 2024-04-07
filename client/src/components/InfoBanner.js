@@ -12,7 +12,7 @@ const InfoBanner = () => {
                 <Grid>
                     <Grid>
                         <SimpleCard
-                            bodyContent={"Pageantree is designed to unite all branches of your pageant, your directors, your judges, and your contestants, into one place, all to make registration, coommunication, judging, and score tallying more streamlined simple, leading to a better experience for everyone."}
+                            bodyContent={"Pageantree is designed to unite all branches of your pageant, your directors, your judges, and your contestants, into one place, all to make registration, communication, judging, and score tallying more streamlined and simple, leading to a better experience for everyone."}
                             height="900px"
                             variant='h6'
                         />
