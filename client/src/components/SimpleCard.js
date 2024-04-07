@@ -2,8 +2,6 @@ import React from 'react'
 import { Card, Typography } from '@mui/material'
 import styled from 'styled-components'
 
-
-
 const SimpleCard = ({
     headerText,
     headerRight,
@@ -12,30 +10,30 @@ const SimpleCard = ({
     footerCenter,
     footerRight,
     height = "fit-content",
-    width = "300px"
+    width = "400px",
+    backgroundColor = "#7EB2DD",
+    raised,
+    variant = "body",
+    textColor = "#000000"
 }) => {
-
     const checkFooter = (footerLeft, footerCenter, footerRight) => {
         if (footerLeft || footerCenter || footerRight) {
-            console.log("true")
             return true
         } else {
-            console.log("false")
             return false
         }
     }
     const checkHeader = (headerText, headerRight) => {
         if (headerText || headerRight) {
-            console.log("true")
             return true
         } else {
-            console.log("false")
             return false
         }
     }
+
     return (
 
-        <StyledCard raised sx={{ height: { height }, width: { width }, backgroundColor: "chartreuse" }}>
+        <StyledCard raised={raised} sx={{ height: { height }, width: { width }, backgroundColor: { backgroundColor } }}>
             {checkHeader(headerText, headerRight) &&
                 < StyledHeader >
                     <Typography variant='h6'>{headerText}</Typography>
@@ -46,16 +44,14 @@ const SimpleCard = ({
             }
             {bodyContent &&
                 <StyledBody>
-                    <Typography variant='body'>
-                        <Typography>{bodyContent}</Typography>
-                    </Typography>
+                    <Typography color={textColor} variant={variant}>{bodyContent}</Typography>
                 </StyledBody>
             }
 
             {checkFooter(footerLeft, footerCenter, footerRight) &&
                 <StyledFooter>
                     {footerLeft &&
-                        <Typography variant='body'>{footerLeft}</Typography>
+                        <Typography variant="body">{footerLeft}</Typography>
                     }
                     {footerCenter &&
                         <Typography variant='body'>{footerCenter}</Typography>
@@ -82,11 +78,12 @@ padding: 10px;
 align-items: center;
 `
 const StyledCard = styled(Card)`
-margin:16px;
+margin:32px 16px;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: space-between;
+padding:16px;
 `
 
 const StyledBody = styled.div`

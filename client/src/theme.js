@@ -26,24 +26,38 @@ const theme = createTheme({
     fontFamily: 'Open Sans',
     h1: {
       fontSize: "72px",
+      fontWeight: "500"
     },
     h2: {
       fontSize: "64px",
+      fontWeight: "500"
     },
     h3: {
       fontSize: "56px",
+      fontWeight: "500"
     },
     h4: {
       fontSize: "48px",
+      fontWeight: "500"
     },
     h5: {
       fontSize: "40px",
+      fontWeight: "500"
     },
     h6: {
+      fontSize: "36px",
+      fontWeight: "500"
+    },
+    h7: {
       fontSize: "32px",
+      fontWeight: "500"
+    },
+    largeBody: {
+      fontSize: "24px",
+      lineHeight: "125%"
     },
     body: {
-      fontSize: "14px"
+      fontSize: "16px"
     },
     subtitle1: {
       fontFamily: 'Lato',
